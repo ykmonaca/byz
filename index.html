@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- ↑DOCTYPE宣言と呼ばれるもので、HTMLのバージョンを宣言するためのもの-->
+<!-- 日本語を使うということ -->
+<html lang="ja">
+
+<head>
+    <!-- 文字コードの設定 -->
+    <meta charset="UTF-8">
+    <!-- レスポンシブの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- サイトタイトルの設定 -->
+    <title>boulangerie YZ</title>
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" type="text/css" href="reset.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fontawesomeの設定 -->
+    <script src="https://kit.fontawesome.com/f8859d0487.js" crossorigin="anonymous"></script>
+    <!-- googlefontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ここからヘッダー -->
+    <header>
+        <div class="header-wrapper">
+            <h1><a href="#"><img src="./images/logo@2x.png" alt="boulangerie YZ"></a></h1>
+            <nav id="js-nav" class="header__nav nav">
+                <ul class="nav__items nav-items">
+                    <li class="nav-items__item"><a href="#news-id" class="navigation__link">NEWS</a></li>
+                    <li class="nav-items__item"><a href="#concept-id" class="navigation__link">CONCEPT</a></li>
+                    <li class="nav-items__item"><a href="#menu-id" class="navigation__link">MENU</a></li>
+                    <li class="nav-items__item"><a href="#shopinfo-id" class="navigation__link">SHOP INFO</a></li>
+                    <li class="nav-items__item"><a href="#" class="navigation__link"><span class="fa-brands fa-instagram insta"></span></a></li>
+                </ul>
+            </nav>
+            <!-- ハンバーガーメニュー -->
+            <button id="js-hamburger" class="header__hamburger hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ここからメインビジュアル -->
+    <div class="main-visual">
+        <img srcset="./images/logo_mv.png 1x, ./images/logo_mv@2x.png 2x" src="./images/logo_mv.png"
+            alt="boulangerie YZロゴ画像">
+    </div>
+
+    <main>
+        <!-- ここからNEWS -->
+        <div id="news-id" class="news">
+            <h2>NEWS</h2>
+            <h3>お知らせ</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="news-date">202X.XX.XX</p>
+                        <p>「フランスパンフェス」への出展のお知らせ</p>
+                    </a>
+                </li>
+                <li class="news-end">
+                    <a href="#">
+                        <p class="news-date">202X.XX.XX</p>
+                        <p>期間限定マロンクリームクロワッサン販売のお知らせ</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ここからCONCEPT -->
+        <div id="concept-id" class="concept">
+            <h2>CONCEPT</h2>
+            <h3>コンセプト</h3>
+            <img src="./images/concept@2x.jpg" alt="沢山の種類のパンの画像" class="concept-img">
+            <h4><span class="marking">世界中の美味しい素材を使ったパンを<br class="br-sp">日常に届けたい</span></h4>
+            <p>世界中から厳選し、こだわりぬいた素材のみを使用。<br>その素材の良さを存分に発揮したパンをお届けします。</p>
+        </div>
+
+        <!-- ここからMENU -->
+        <div id="menu-id" class="menu">
+            <h2>MENU</h2>
+            <h3>定番メニュー</h3>
+            <div class="menu-wrapper">
+                <div>
+                    <img src="./images/menu_croissant@2x.jpg" alt="クロワッサンの画像">
+                    <p class="menu-name">クロワッサン</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+                <div>
+                    <img src="./images/menu_melonbread@2x.jpg" alt="メロンパンの画像">
+                    <p class="menu-name">メロンパン</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+                <div>
+                    <img src="./images/menu_frenchbread@2x.jpg" alt="フランスパンの画像">
+                    <p class="menu-name">フランスパン</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+                <div>
+                    <img src="./images/menu_bread@2x.jpg" alt="食パンの画像">
+                    <p class="menu-name">食パン</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+                <div>
+                    <img src="./images/menu_donut@2x.jpg" alt="ドーナツの画像">
+                    <p class="menu-name">ドーナツ</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+                <div>
+                    <img src="./images/menu_sandwiches@2x.jpg" alt="サンドウィッチの画像">
+                    <p class="menu-name">サンドウィッチ</p>
+                    <p class="menu-price">¥300</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ここからSHOP INFO -->
+        <div id="shopinfo-id" class="shopinfo">
+            <h2>SHOP INFO</h2>
+            <h3>店舗情報</h3>
+            <div class="shopinfo-wrapper">
+                <ul>
+                    <li>
+                        <p class="shopinfo-item">住所</p>
+                        <p>○○県○○市中央区○○町1-23-456</p>
+                    </li>
+                    <li>
+                        <p class="shopinfo-item">TEL</p>
+                        <p>0123-456-7890</p>
+                    </li>
+                    <li>
+                        <p class="shopinfo-item">営業時間</p>
+                        <p>9:00 - 18:00</p>
+                    </li>
+                    <li>
+                        <p class="shopinfo-item">定休日</p>
+                        <p>月曜日・祝日</p>
+                    </li>
+                    <li>
+                        <p class="shopinfo-item">駐車場</p>
+                        <p>無し</p>
+                    </li>
+                    <li class="shopinfo-end">
+                        <p class="shopinfo-item">イートイン</p>
+                        <p>有り</p>
+                    </li>
+                </ul>
+
+                <!-- ここからgooglemap読み込み -->
+                <div class="googlemap-area">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.97936276068!2d139.57866855671497!3d35.70263329311648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee47f6226cc3%3A0x34e6b69989d52a4e!2z5ZCJ56Wl5a-66aeF!5e0!3m2!1sja!2sjp!4v1730309908909!5m2!1sja!2sjp"
+                        width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="googlemap"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ここからフッター -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <a href="#"><img src="./images/logo_white@2x.png" alt="boulangerie YZ"></a>
+            </div>
+            <ul>
+                <li><a href="#news-id">NEWS</a></li>
+                <li><a href="#concept-id">CONCEPT</a></li>
+                <li><a href="#menu-id">MENU</a></li>
+                <li><a href="#shopinfo-id">SHOP INFO</a></li>
+                <li><a href="#"><span class="fa-brands fa-instagram insta"></span></a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2024 boulangerie YZ All Rights Reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
